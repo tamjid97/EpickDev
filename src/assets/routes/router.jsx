@@ -7,6 +7,7 @@ import Education from "../Home/Education";
 import Experience from "../Home/Experience";
 import Projects from "../Home/Projects";
 import Contact from "../Home/Contact";
+import Sertifect from "../Home/Sertifect";
 
 export const router = createBrowserRouter([
   {
@@ -25,13 +26,17 @@ export const router = createBrowserRouter([
         path: "skills",
         Component: Skills
       },
-      {
+      { 
         path: "projects",
         Component: Projects
       },
       {
         path: "Education",
         Component: Education
+      },
+      {
+        path: "Certification",
+        Component: Sertifect
       },
       {
         path: "Exprinc",

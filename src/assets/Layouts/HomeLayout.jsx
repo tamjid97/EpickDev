@@ -19,26 +19,11 @@ const HomeLayout = () => {
   };
 
   return (
-    <motion.div
-      className="min-h-screen w-full relative overflow-hidden"
-      variants={bgVariants}
-      animate="animate"
-    >
-      <SnowfallEffect />
-      <Particle />
-
-      {/* Navbar overlay */}
-      <div className="absolute top-0 left-0 w-full z-50">
-        <Navbar />
-      </div>
-
-      {/* Page content */}
-      <div className="pt-16"> {/* Navbar height spacing */}
-        <Outlet />
-      </div>
-
-      <Footer />
-    </motion.div>
+ <div className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-500 bg-animated">
+  <Navbar />
+  <Outlet />
+  <Footer />
+</div>
   );
 };
 
