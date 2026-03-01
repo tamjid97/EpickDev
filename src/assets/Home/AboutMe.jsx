@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profilePic from "../imgs/ep2.jpg";
+import profilePic from "../imgs/prema.jpg";
 import { Typewriter } from "react-simple-typewriter";
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
-    <section className=" flex flex-col md:flex-row items-center justify-center text-white px-6 md:px-60 ml-0 md:ml-25 py-20">
+    <section className="flex flex-col md:flex-row items-center justify-center text-white px-6 md:px-60 py-20">
       
       {/* Left Text Content */}
       <motion.div
@@ -57,26 +57,37 @@ const AboutMe = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2.5, duration: 1 }}
-          className="flex space-x-6 text-4xl text-purple-400"
+          className="flex flex-col space-y-4"
         >
-          <a href="https://github.com/tamjid97" target="_blank" rel="noopener noreferrer">
-            <FaGithub className="hover:text-white transition-colors" />
-          </a>
+          <div className="flex space-x-6 text-4xl text-purple-400">
+            <a href="https://github.com/tamjid97" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="hover:text-white transition-colors" />
+            </a>
 
-          <a
-            href="https://www.linkedin.com/in/epick-hero-codes"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className="hover:text-white transition-colors" />
-          </a>
+            <a
+              href="https://www.linkedin.com/in/epick-hero-codes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="hover:text-white transition-colors" />
+            </a>
 
+            <a
+              href="https://www.facebook.com/share/1FqQqK6pA7/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook className="hover:text-white transition-colors" />
+            </a>
+          </div>
+
+          {/* Glass Contact Button */}
           <a
-            href="https://www.facebook.com/share/1FqQqK6pA7/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:epickhossain970@gmail.com"
+            className="mt-4 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 backdrop-blur-md border border-white/30 text-white font-semibold shadow-lg hover:bg-white/20 hover:scale-105 transition-transform duration-300"
           >
-            <FaFacebook className="hover:text-white transition-colors" />
+            <FaEnvelope />
+            Send Me a Message
           </a>
         </motion.div>
       </motion.div>

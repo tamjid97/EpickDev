@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Experience = () => {
   const experiences = [
     {
-      duration: "6-7 Months",
+      duration: "9-10 Months",
       title: "Coding Journey",
       description: "Continuously learning web development and programming. Practicing new skills daily and expanding knowledge. Will keep learning and improving in the future.",
     },
