@@ -7,6 +7,7 @@ import Education from "./Education";
 import Skills from "./Skills";
 import AboutMe from "./AboutMe";
 import MYJourney from "../../pages/MYjurny";
+import Sertifect from "./Sertifect";
 
 const Home = () => {
   return (
@@ -25,6 +26,10 @@ const Home = () => {
 
       <section id="education">
         <Education />
+      </section>
+
+      <section id="sertifect">
+        <Sertifect/>
       </section>
 
       <section id="experience">

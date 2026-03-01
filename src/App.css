@@ -1,16 +1,24 @@
-/* globals.css বা tailwind overrides */
-@keyframes gradientBG {
-  0% {
-    background: linear-gradient(135deg, #1f2937, #4c1d95);
-  }
-  50% {
-    background: linear-gradient(135deg, #4c1d95, #9333ea);
-  }
-  100% {
-    background: linear-gradient(135deg, #9333ea, #1f2937);
-  }
+/* Dark mode smooth animated gradient */
+.dark .bg-animated {
+  background: linear-gradient(
+    -45deg,
+    #1f2937,
+    #4c1d95,
+    #9333ea,
+    #1f2937
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
 }
 
-.bg-animated {
-  animation: gradientBG 15s infinite alternate;
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
